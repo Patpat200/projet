@@ -4,9 +4,12 @@ body {
     font-weight: 800;
 }
 .text {
-    color: aliceblue;
+    color: #f4f80f;
     font-weight: 800;
 }
 .bonjour a{
     color:#05ff05;
+}
+.intro {
+    color: #f4f80f;
 }
