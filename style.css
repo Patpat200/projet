@@ -1,16 +1,25 @@
 body {
-    background-image: url("image/discord-4OXyS2.png");
-    font-family: 'calibri';
+    background-image: url("image/Sans titre.png");
+    font-family: 'Roboto Flexs';
+    font-weight: 800;
+}
+.text {
+    color: #fe4d01;
     font-weight: 800;
     text-align: center;
 }
-.text {
-    color: #f4f80f;
-    font-weight: 800;
-}
 .bonjour a{
     color:#05ff05;
+    text-align: center;
+}
+.bonjour {
+    color: aliceblue;
+    text-align: center;
 }
 .intro {
     color: #f4f80f;
+    text-align: center;
+}
+.pp {
+    image
 }
