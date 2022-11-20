@@ -1,6 +1,5 @@
 body {
-    background-image: url("image/Sans titre.png");
-    font-family: 'Roboto Flexs';
+    background-image: url("image/page.png");
     font-weight: 800;
 }
 .text {
@@ -9,7 +8,7 @@ body {
     text-align: center;
 }
 .bonjour a{
-    color:#05ff05;
+    color:#6105ff;
     text-align: center;
 }
 .bonjour {
@@ -20,6 +19,6 @@ body {
     color: #f4f80f;
     text-align: center;
 }
-.pp {
-    image
+.explication {
+    font-family: 'arial black';
 }
