@@ -19,15 +19,3 @@ body {
 .intro {
     color: #f4f80f;
 }
-.clk_box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
-    background: var(--boxBg);
-    border: 1px solid #3e4173;
-    box-sizing: border-box;
-    border-radius: 16px;
-    padding: 15px;
-    margin-bottom: 25px;
-}
