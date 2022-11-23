@@ -1,39 +1,60 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-image: url("image/page.png");
+    background: #fafafa;
     font-weight: 800;
     font-family: 'arial black';
 }
+
+.animated-text {
+  overflow: hidden;
+  margin: 0;
+  padding: 0 0 15px 0;
+  display: flex;
+  flex-direction: column;
+  background: #111111;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+
 .text {
-    color: #fe4d01;
-    font-weight: 800;
-    text-align: center;
+  color: #fe4d01;
+  font-weight: 800;
+  text-align: center;
 }
 .bonjour a{
-    color:#6105ff;
-    text-align: center;
+  color:#6105ff;
+  text-align: center;
 }
 .bonjour {
-    color: aliceblue;
-    text-align: center;
+  color: aliceblue;
+  text-align: center;
 }
+
 .intro {
-    color: #f4f80f;
-    text-align: center;
-        animation-duration: 5s;
-        animation-name: slidein;
-        animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-      }  
-      @keyframes slidein {
-        from {
-          margin-left: 100%;
-          width: 300%;
-        }
-      
-        to {
-          margin-left: 0%;
-          width: 100%;
-        }
-      }   
+    display: inline-block;
+    color: #e7e7e7;
+    text-align: left;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation: 6s slidein ease-in-out infinite alternate;
+    width: 100%;
+}  
+
+
+@keyframes slidein {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(150%);
+  }
+}   
