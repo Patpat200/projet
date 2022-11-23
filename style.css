@@ -40,10 +40,6 @@ body {
     display: inline-block;
     color: #e7e7e7;
     text-align: left;
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
     animation: 6s slidein ease-in-out infinite alternate;
     width: 100%;
 }  
