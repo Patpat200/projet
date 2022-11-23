@@ -10,6 +10,7 @@ body {
 }
 
 .animated-text {
+  position: relative;
   overflow: hidden;
   margin: 0;
   padding: 0 0 15px 0;
@@ -29,25 +30,31 @@ body {
   text-align: center;
 }
 .bonjour {
+  margin-top: 20px;
   color: aliceblue;
   text-align: center;
 }
 
 .intro {
-    display: inline-block;
+    text-align: center;
+    display: block;
     color: #e7e7e7;
     text-align: left;
-    animation: 6s slidein ease-in-out infinite alternate;
-    width: 100%;
+    /* animation-fill-mode: both; */
+    animation: 3s slidein ease-in-out both;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }  
 
 
 @keyframes slidein {
   from {
-    transform: translateX(-50%);
+    transform: translate(200%, -125%);
   }
 
   to {
-    transform: translateX(150%);
+    transform: translate(-50%, -125%);
   }
 }   
