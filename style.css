@@ -31,7 +31,7 @@ body {
 }
 .bonjour {
   margin-top: 20px;
-  color: rgb(242, 255, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -57,4 +57,4 @@ body {
   to {
     transform: translate(-50%, -125%);
   }
-}   
+}  
