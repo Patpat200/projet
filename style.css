@@ -25,10 +25,7 @@ body {
   font-weight: 800;
   text-align: center;
 }
-.bonjour a{
-  color:#6105ff;
-  text-align: center;
-}
+
 .bonjour {
   margin-top: 20px;
   color: rgb(255, 255, 255);
@@ -58,3 +55,44 @@ body {
     transform: translate(-50%, -125%);
   }
 }  
+
+
+
+
+ul#nav-box {
+        margin : 0 0 1.5em 0;
+        padding : 5px 1em 5px 0;
+        list-style-type : none;
+        color: #4b4b69;
+        font-weight : bold;
+        font-size : 0.9em;
+        text-align: left;
+ }
+ ul#nav-box li {
+  display: inline;
+  padding : 5px 0;
+}
+
+/* On retrouve le padding haut et bas de 5 pixels (car sinon Internet Explorer
+* va n'en faire qu'à sa tête) et j'ajoute un espace latéral de 1em de chaque
+* côté des liens. J'indique également la couleur des caractères des liens et je
+* place un bord gauche continu et blanc de 1 pixel de large. text-decoration :
+* none; indique que je ne veux pas que les liens soient soulignés (ce qui serait
+* le cas par défaut.
+*/
+ul#nav-box li a {
+  padding : 5px 1em 5px 1em;
+  color: #4b4b69;
+  text-decoration: none;
+  border-left: 1px solid #fff;
+}
+
+/* Ici, ce qui se passe au survol des liens : changement de la couleur du fond,
+* de la couleur des caractères, je n'oublie pas de remettre à ce lien survolé le
+* bord gauche que j'ai défini pour les liens « au repos ».
+*/
+ul#nav-box li a:hover {
+  background-color: #4b4b69;
+  color: #d9d940;
+  border-left: 1px solid #fff;
+}
