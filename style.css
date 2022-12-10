@@ -92,7 +92,7 @@ ul#nav-box li a {
 * bord gauche que j'ai défini pour les liens « au repos ».
 */
 ul#nav-box li a:hover {
-  background-color: #4b4b69;
-  color: #d9d940;
+  background-color: #767685;
+  color: #e5e216;
   border-left: 1px solid #fff;
 }
