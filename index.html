@@ -17,7 +17,28 @@
     <ul id="nav-box">
         <li><a href=" https://patpat200.github.io/patpat/">Accueil</a></li>
         <li><a href="https://discord.gg/3nKvRn9YW2" title="Liste des mois de publication">Serveur</a></li>
-        <li><a href="{{tpl:BlogURL}}contact" title="Formulaire de contact">Me contacter</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="Formulaire de contact">Argent</a></li>
       </ul>
+
+
+      <div id="compteur">
+        Visites: 
+        <?php
+        $fichier = "compteur.txt";
+        $handle = fopen($fichier, "r");
+        if(!$handle){
+          echo "Impossible d'ouvrir le fichier";
+        } else {
+          $compteur = (int )fread($handle,20);
+          fclose ($handle);
+          $compteur++;
+          echo "$compteur";
+          $handle = fopen($fichier, "w" );
+          fwrite($handle,$compteur);
+          fclose ($handle);
+        }
+        ?>
+      </div>
+      
 </body>
 </html> 
