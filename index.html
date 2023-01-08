@@ -20,21 +20,5 @@
         <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="Formulaire de contact">Argent</a></li>
       </ul> 
       <div id="compteur">Visites : <span id="nbVisites">0</span></div>
-
-<script>
-  // Récupère la valeur du compteur de visites stockée dans le navigateur
-  let compteurVisites = localStorage.getItem("compteurVisites");
-  // Si le compteur de visites n'est pas défini, on le définit à 0
-  if (compteurVisites === null) {
-    compteurVisites = 0;
-  }
-  // On incrémente le compteur de visites
-  compteurVisites++;
-  // On stocke la nouvelle valeur du compteur de visites dans le navigateur
-  localStorage.setItem("compteurVisites", compteurVisites);
-  // On affiche le compteur de visites dans le HTML
-  document.getElementById("nbVisites").innerHTML = compteurVisites;
-</script>
-
 </body>
 </html> 
