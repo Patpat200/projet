@@ -96,3 +96,9 @@ ul#nav-box li a:hover {
   color: #e5e216;
   border-left: 1px solid #fff;
 }
+
+
+.download {
+  color: #000000;
+  background-color: aqua;
+}
