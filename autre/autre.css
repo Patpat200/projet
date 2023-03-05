@@ -1,0 +1,32 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+  }
+
+.intro {
+    text-align: center;
+    display: block;
+    color: #fff202;
+    text-align: left;
+    /* animation-fill-mode: both; */
+    animation: 3s slidein ease-in-out both;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}  
+.animated-text2 {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    background: #111111;
+    border-radius: 0 0 10px 10px;
+  }
+  .bonjour {
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
