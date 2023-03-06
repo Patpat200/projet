@@ -18,9 +18,5 @@ btn6.onclick = () => document.body.style.backgroundColor = "white";
 btn7.onclick = () => document.body.style.backgroundColor = "black";
 
 
-var compteur = parseInt(document.getElementById("compteur").innerHTML);
-function incrementerCompteur() {
-    compteur += 1;
-    document.getElementById("compteur").innerHTML = compteur;
-  }
+
   
