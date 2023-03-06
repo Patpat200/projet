@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>patpat</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
 </head>
+
 <body>
     <nav>
         <div class="animated-text">
@@ -27,5 +29,44 @@
         <p>Bonjour, je suis tacos j'essaye d'apprendre le codage donc si vous avez des conseil pour m'aider vous pouvez me contacté en clicant sur <a class="aide" href="http:////discord.gg/3nKvRn9YW2" target="_blank" rel="noopener noreferrer">sa</a> je suis tacos#1500 : ) </p> 
         <img src="" alt="">
       </div>
+
+
+      <div class="compteur">
+      <p>Nombre de visiteurs : <span id="compteur">0</span></p>
+      <body onload="incrementerCompteur()">
+    </div>
+
+
+      
+<div class="theme"> choisi ton thème
+
+    <li><button id="btn1">Bleu</button></li>
+    <li><button id="btn2">Rouge</button></li>
+    <li><button id="btn3">Vert</button></li>
+    <li><button id="btn4">Violet</button></li>
+    <li><button id="btn5">Jaune</button></li>
+    <li><button id="btn6">Blanc</button></li>
+    <li><button id="btn7">Noir</button></li>
+
+    <!-- <script>            1er methode
+        const btn1 = document.getElementById("btn1")
+        const btn2 = document.getElementById("btn2")
+        const btn3 = document.getElementById("btn3")
+        const btn4 = document.getElementById("btn4")
+        const btn5 = document.getElementById("btn5")
+        const btn6 = document.getElementById("btn6")
+
+        btn1.onclick = () => document.body.style.backgroundColor = "blue";
+        btn2.onclick = () => document.body.style.backgroundColor = "red";
+        btn3.onclick = () => document.body.style.backgroundColor = "green";
+        btn4.onclick = () => document.body.style.backgroundColor = "purple";
+        btn5.onclick = () => document.body.style.backgroundColor = "yellow";
+        btn6.onclick = () => document.body.style.backgroundColor = "white";
+
+    </script> -->
     
+
+</div>
+
+</body>    
 </html> 
