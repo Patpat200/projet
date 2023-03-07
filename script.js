@@ -18,3 +18,12 @@ btn6.onclick = () => document.body.style.backgroundColor = "white";
 btn7.onclick = () => document.body.style.backgroundColor = "black";
 
 
+window.onscroll = function() {stickyNavbar()};
+
+function stickyNavbar() {
+  if (window.pageYOffset >= 50) {
+    document.querySelector(".animated-text").classList.add("sticky");
+  } else {
+    document.querySelector(".animated-text").classList.remove("sticky");
+  }
+}
