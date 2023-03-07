@@ -18,5 +18,3 @@ btn6.onclick = () => document.body.style.backgroundColor = "white";
 btn7.onclick = () => document.body.style.backgroundColor = "black";
 
 
-
-  

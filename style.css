@@ -114,9 +114,100 @@ ul#nav-box li a:hover {
   color: gold;
 }
 
-.theme {
-  color: #000000;
+.choisi {
+  color: #4b4b69;
 }
+
+
+
+
+
+#theme button {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  font-size: 24px;
+  padding: 16px 24px;
+  margin: 8px;
+}
+
+#theme button:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #fff;
+}
+
+#theme button.active {
+  transform: scale(0.5);
+}
+
+#theme button:active {
+  animation: fall 0.3s ease-in-out;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(20%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  75% {
+    transform: translateY(80%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+
+
+.box {
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: rgb(207,232,220);
+  padding: 1em;
+}
+.special {
+  background-color: rgb(79,185,227);
+  padding: 10px;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
