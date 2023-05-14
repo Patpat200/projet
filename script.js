@@ -9,6 +9,19 @@
 // const btn6 = document.getElementById("btn6")
 // const btn7 = document.getElementById("btn7")
 
+
+
+
+let box = document.querySelector(".joli"),
+  input = document.querySelector("input");
+
+input.addEventListener("input", () => {
+  box.style.borderRadius = input.value;
+  box.style.background = input.value;
+
+});
+
+
 btn1.onclick = () => document.body.style.backgroundColor = "blue";
 btn2.onclick = () => document.body.style.backgroundColor = "red";
 btn3.onclick = () => document.body.style.backgroundColor = "green";
@@ -27,3 +40,5 @@ function stickyNavbar() {
     document.querySelector(".animated-text").classList.remove("sticky");
   }
 }
+
+

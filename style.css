@@ -185,16 +185,18 @@ ul#nav-box li a:hover {
 
 
 
-
-
-
-
-
-
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+
+.joli {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #333;
+  transition: all 0.4s ease;
 }
 
 
