@@ -185,11 +185,7 @@ ul#nav-box li a:hover {
 
 
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+
 
 
 .joli {
@@ -201,6 +197,73 @@ ul#nav-box li a:hover {
 
 
 
+
+.box {
+  position: relative;
+}
+
+.box::before,
+.box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+  width: 100%;
+  height: 100%;
+  background-size: 500%;
+  z-index: -1;
+  transform: scale(1.02);
+  animation: animate 20s infinite;
+}
+.box::after {
+  filter: blur(20px);
+
+}
+
+@keyframes animate {
+  0% { background-position: 0 0;}
+  52% { background-position: 300% 0; }
+  100% { background-position: 0  0; }
+}
+
+
+
+button {
+  border: 0;
+  background: transparent;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.5em;
+  box-shadow: 0px -0px 0px rgba(143, 43, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+  transition: all .2s;
+}
+
+button::after {
+  content: "";
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(225deg,#27d86c 0%, #26caf8 50%, #c625d0 100%);
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: -1;
+  transition: all .5s;
+}
+
+
+button:hover::after {
+  transform: rotate(150deg);
+}
+
+button:hover {
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, .25), -10px 10px 25px 0 rgba(39, 200, 255, .25);
+}
 
 
 
